@@ -1,0 +1,108 @@
+@import '../../styles/Colors.scss';
+
+@mixin footer-top-items{
+  width: inherit;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding: 2rem;
+  padding-top: 3rem;
+  line-height: 1.5rem;
+  h5{
+    font-weight: bold;
+  }
+} 
+
+.footer {
+    background-color: $color-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  
+    &-top, 
+    &-bottom{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+    }
+    &-bottom p {
+      padding: .5rem;
+    }
+    &-location{
+      @include footer-top-items;
+      background-image: url(../../assets/images/marker.png);
+    }
+    &-contact{
+      @include footer-top-items;
+      background-image: url(../../assets/images/contact-card.png);
+     &__link{
+       text-decoration: none;
+       color: $color-title2;
+     }
+    }
+    &-media{
+      @include footer-top-items;
+      background-image: url(../../assets/images/comments.png);
+      .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+      }
+      &__linkedin{
+        background-image: url(../../assets/images/icons8-linkedin-circundado.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+      &__github {
+        background-image: url(../../assets/images/icons8-github.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+      &__facebook {
+        background-image: url(../../assets/images/icons8-facebook.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+      &__whatsapp {
+        background-image: url(../../assets/images/icons8-whatsapp.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+      }
+    } 
+}
+
+@media screen and (min-width: 768px){
+  .footer{
+    flex-direction: column;
+    align-items: center;
+
+    &-top{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &-location, &-media, &-contact{
+      width: 33.33%;
+    }
+  }
+}

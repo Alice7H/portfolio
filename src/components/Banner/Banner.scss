@@ -1,0 +1,95 @@
+@import '../../styles/Colors.scss';
+
+canvas{
+  z-index: 1;
+  width: 100vw;
+  height: 65vh;
+}
+.canvas-container {
+  height: 0px;
+  width: 100vw;
+  border: none;
+}
+.banner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .avatar{
+    background-color: $color-1;
+    outline: 5px dashed $color-2;
+    border-radius: 50%;
+    margin: 2rem auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  &-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: $color-title;
+  }
+  &-subtitle{
+    font-weight: bold;
+    padding-left: 2rem;
+    color: $color-title;
+    animation-duration: 1s, 7s;
+    animation-timing-function: steps(40), steps(40);
+    animation-delay: 0s, 1s;
+    animation-iteration-count: infinite, 1;
+    animation-direction: normal, normal;
+    animation-fill-mode: none, both;
+    animation-play-state: running, running;
+    animation-name: cursor, line;
+    border-right: 3px solid $color-2;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    @keyframes cursor{
+      0%{border-right-color: $color-2;}
+      100%{ border-right-color: transparent;}
+    }
+    @keyframes line{
+      0%{width: 0;}
+      100%{width: 14em;}
+      // 100%{width: 12.5em;}
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  canvas{
+    height: 80vh;
+  }
+  .banner{
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80vh;
+
+    .avatar{
+      width: 25vw;
+      height: auto;
+    }
+    &-title{
+      font-size: 2.5rem;
+    }
+    &-subtitle{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .banner{
+    &-title{
+      font-size: 3rem;
+    }
+    &-subtitle{
+      font-size: 2rem;
+    }
+  }
+}

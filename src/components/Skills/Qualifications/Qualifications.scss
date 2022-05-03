@@ -1,0 +1,60 @@
+@import '../../../styles/Colors.scss';
+
+.qualifications {
+  display: flex;
+  flex-direction: column;
+  &-title{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  &-list{
+    border-radius: 5px;
+    li{
+      display: inline;
+      height: 1.5rem;
+      padding: 0;
+      border-bottom: none;
+      transition: 0.5s;
+      cursor: pointer;
+      h3,p{ color: $color-5 }
+      h3{
+        font-size: 1.5rem;
+        background-color: $color-2;
+        border-left: 1px solid $color-3;
+        border-top: 1px solid $color-3;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 1rem;
+        padding-left: 10px;
+      }
+      p{display: none;} 
+      :active + p,
+      :hover + p{
+        background-color: $color-2;
+        border-left: 1px solid $color-3;
+        border-bottom: 1px solid $color-3;
+        border-bottom-left-radius : 5px;
+        border-bottom-right-radius: 5px;
+        display: block;
+        padding: 2rem .3rem;
+        padding-left: 25vw;
+        opacity: 0.8;
+      } 
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .qualifications {
+    &-list{
+      li{
+        p{display: none;} 
+        :active + p,
+        :hover + p{
+          padding: 3rem auto; 
+        } 
+      }
+    }
+  }
+}

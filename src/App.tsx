@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.scss';
+import { useState } from 'react';
+import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
+import Banner from './components/Banner';
+import Skills from './components/Skills';
+import Footer from './components/Footer';
+import Projects from './components/Projects';
+import AboutMe from './components/AboutMe';
 
 function App() {
+  const [darktheme, setDarkTheme] = useState(true);
+  
+  function handleChangeMode(): void{
+    setDarkTheme(!darktheme);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header handleChangeMode={handleChangeMode} />
+      <main className={darktheme ? 'dark-theme' : 'light-theme'}>
+        <Banner />
+        <AboutMe />
+        <Projects />
+        <Skills />   
+        <ScrollToTop/>
+      </main>
+      <Footer />
+    </>
   );
 }
 

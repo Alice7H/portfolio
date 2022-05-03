@@ -1,0 +1,14 @@
+@import '../../../styles/Colors.scss';
+.certificates {
+  &-title{
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+  &-list{
+    padding: .5rem;
+    li{
+      padding-left: 1rem;
+    }
+  }
+}

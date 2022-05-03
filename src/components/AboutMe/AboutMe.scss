@@ -1,0 +1,16 @@
+@import "../../styles/Colors.scss";
+.about-me {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  &-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  &-paragraph {
+    padding-top: 1rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+  }
+}
