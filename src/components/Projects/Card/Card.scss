@@ -1,0 +1,66 @@
+@import "../../../styles/Colors.scss";
+
+.card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .5rem 0;
+  padding: 1rem;
+  a,p{
+    text-decoration: none;
+    color: $color-title2;
+  }
+  &-image {
+    width: 90%;
+    padding: 5%;
+    border-radius: 5px;
+  }
+  &-description {
+    padding-top: 0.5rem;
+  }
+  &-tech {
+    margin: 1rem 0;
+    align-self: flex-start;
+  }
+  &-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    .tag {
+      border-radius: 4px;
+      background-color: $color-3;
+      color: $color-title;
+      margin: 5px;
+      padding: 5px;
+    }
+  }
+  .card-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    .btn-link {
+      background: $color-3;
+      border-radius: 5px;
+      color: $color-title;
+      padding: 1rem;
+      margin: 5px;
+      text-align: center;
+      transition: 0.5s;
+      &:hover{
+        background: $color-5;
+        color: $color-title;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin: 1.5rem 1rem;
+    width: calc(33.33% - 4rem);
+  }
+}

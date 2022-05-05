@@ -1,14 +1,14 @@
 @import '../../styles/Colors.scss';
 
 @mixin footer-top-items{
-  width: inherit;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 40px;
+  background-size: 70px;
   padding: 2rem;
   padding-top: 3rem;
   line-height: 1.5rem;
   h5{
+    margin-top: 1.5rem;
     font-weight: bold;
   }
 } 
@@ -60,32 +60,32 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
       }
       &__github {
         background-image: url(../../assets/images/icons8-github.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
       }
       &__facebook {
         background-image: url(../../assets/images/icons8-facebook.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
       }
       &__whatsapp {
         background-image: url(../../assets/images/icons8-whatsapp.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
       }
     } 
 }
@@ -94,11 +94,11 @@
   .footer{
     flex-direction: column;
     align-items: center;
-
+    padding: 1rem;
     &-top{
-      display: flex;
+      width: 100%;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: flex-start;
     }
     &-location, &-media, &-contact{

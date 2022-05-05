@@ -9,6 +9,10 @@
     padding: .5rem;
     li{
       padding-left: 1rem;
+      line-height: 2rem;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }

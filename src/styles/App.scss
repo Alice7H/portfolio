@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a{
@@ -21,13 +22,25 @@ a{
 .dark-theme{ 
   background-color: $dark-theme; 
   a,p,li,h1,h2,h3,h4 {color: $color-title; }
-  .card{background-color: $color-1;}
+  .card{
+    background-color: $color-1;
+    transition: box-shadow 0.5s ease-in-out;
+    &:hover{
+      box-shadow: 6px 6px 2px $color-4;
+    }
+  }
   .banner{background-color: $color-5;}
 }
 
 .light-theme{ 
   background-color: $light-theme; 
   a,p,li,h1,h2,h3,h4 {color: $color-title2; }
-  .card{background-color: $color-1;}
+  .card{
+    background-color: $color-1;
+    transition: box-shadow 0.5s ease-in-out;
+    &:hover{
+      box-shadow: 6px 6px 2px $color-6;
+    }
+  }
   .banner{background-color: $color-3;}
 }

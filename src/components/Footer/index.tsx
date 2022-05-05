@@ -1,14 +1,15 @@
 import './Footer.scss';
+import ScrollToTop from '../ScrollToTop';
 
 export default function Footer() {
   return (
     <footer className="footer">
+       <ScrollToTop/>
       <div className="footer-top">
         <div className="footer-location">
           <h5>Localização</h5>
           <p>Vila Santa Terezinha, Sorocaba, São Paulo - BR</p>
         </div>
-
         <div className="footer-media"> 
           <h5>Redes sociais</h5>
           <div className="row">
@@ -24,7 +25,6 @@ export default function Footer() {
             </a>    
           </div> 
         </div>
-
         <div className="footer-contact" id="contact">
           <h5>Contato</h5>
           <p>
@@ -39,10 +39,9 @@ export default function Footer() {
           </p>
         </div>
       </div>
-
-      <div className="footer-bottom">
-          <p>Desenvolvido em 2022</p>
+      <div className="footer-bottom">              
           <p>Ícones encontrados no site <a href="https://icons8.com" target="_blank" rel="noreferrer" aria-label="Link para os ícones da aplicação" >Icons8</a></p>
+          <p>Desenvolvido em 2022</p>
       </div>
     </footer>
   );

@@ -6,6 +6,7 @@ export default function ToggleTheme({handleChangeMode}: IThemeMode) {
     <>
       <label className="switch">
         <input 
+          tabIndex={0}
           type="checkbox" 
           className="toggleScreenReader" 
           onChange={handleChangeMode}

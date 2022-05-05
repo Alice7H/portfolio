@@ -23,8 +23,8 @@ export default function Header({handleChangeMode}: IThemeMode) {
             <li className='header-list__item'>
               <a href='#contact'>Contato</a>
             </li>
-            <li className='header-list__item'>
-              <a href='/'><ToggleTheme handleChangeMode={handleChangeMode}/></a>
+            <li className='header-list__item' tabIndex={-1}>
+              <a href='/' tabIndex={-1}><ToggleTheme handleChangeMode={handleChangeMode}/></a>
             </li>
           </ul>
         </nav>

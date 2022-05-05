@@ -1,5 +1,6 @@
 import './Banner.scss';
 import './particle-canvas';
+import MyAvatar from '../../assets/images/my-avatar.png';
 
 export default function Banner() {
   return (
@@ -13,7 +14,7 @@ export default function Banner() {
       <h2 className="banner-subtitle">Desenvolvedora Front-End Jr.</h2>
     </div>
     <div className="right">
-      <img src="https://uploaddeimagens.com.br/images/003/168/916/original/my_avatar2.png?1617083278" 
+      <img src={MyAvatar} 
       alt="my avatar" className="avatar"
       />
     </div>

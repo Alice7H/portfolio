@@ -8,6 +8,9 @@
   justify-content: space-between;
   padding: 1rem;
   &-title {
+    background: linear-gradient(to bottom right, $color-4 0%, $color-5 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -16,7 +19,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     &__item {
       color: $color-1;
       margin: 10px;
@@ -35,6 +37,15 @@
     }
     &-list {
       flex-direction: row;
+      &__item {
+        a {
+          font-size: 18px;
+          &:hover{
+            text-decoration: underline;
+            color: $color-3;
+          }
+        }
+      }
     }
   }
 }
