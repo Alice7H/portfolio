@@ -80,8 +80,8 @@ export const projects = [
     id: 7,
     image: `${LetmeaskBanner}`,
     name: "LetMeAsk",
-    description: "Este é um projeto ",
-    tags: ['HTML','REACT','TypeScript','SCSS', 'FIREBASE'],
+    description: "Este é um projeto que consiste em salas de Q&A (perguntas e respostas)",
+    tags: ['HTML','REACT','TYPESCRIPT','SCSS', 'FIREBASE'],
     demo: "https://letmeask-nlw-45f71.web.app/",
     repository: ""
   }
