@@ -5,6 +5,16 @@
     font-size: 1rem;
     padding-top: 2rem;
   }
+  &-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0px;
+  }
+  &-image{
+    display: none;
+  }
   &-list{
     padding: .5rem;
     li{
@@ -13,6 +23,27 @@
       &:hover{
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .certificates {
+    &-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &-image{
+      display: block;
+      max-width: 400px;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .certificates {
+    &-image{
+      max-width: 500px;
     }
   }
 }

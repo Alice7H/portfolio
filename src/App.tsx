@@ -9,21 +9,21 @@ import AboutMe from './components/AboutMe';
 
 function App() {
   const [darktheme, setDarkTheme] = useState(true);
-  
+
   function handleChangeMode(): void{
     setDarkTheme(!darktheme);
   }
 
   return (
-    <> 
+    <>
       <Header handleChangeMode={handleChangeMode} />
       <main className={darktheme ? 'dark-theme' : 'light-theme'}>
         <Banner />
         <AboutMe />
         <Projects />
-        <Skills />   
+        <Skills />
       </main>
-      <Footer /> 
+      <Footer />
     </>
   );
 }

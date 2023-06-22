@@ -11,18 +11,15 @@ export default function Qualifications() {
         </li>
         <li>
           <h3>Cursos</h3>
-          <p>Alura, Freecodecamp e Udemy</p>
+          <p>Dio, Alura, Freecodecamp e Udemy</p>
         </li>
         <li>
           <h3>Bootcamps</h3>
-          <p>Alura e Rocketseat</p>
+          <p>Dio, Alura e Rocketseat</p>
         </li>
         <li>
-          <h3>Experiência</h3>
+          <h3>Experiências</h3>
           <p> Estágio na Tec'events</p>
-        </li>
-        <li>
-          <h3>Outras experiências</h3>
           <p>Venda e cultivo de orquídeas, cactos e suculentas</p>
         </li>
       </ul>

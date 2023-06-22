@@ -11,7 +11,7 @@
     margin-top: 1.5rem;
     font-weight: bold;
   }
-} 
+}
 
 .footer {
     background-color: $color-2;
@@ -21,8 +21,8 @@
     align-items: center;
     text-align: center;
     padding: 10px;
-  
-    &-top, 
+
+    &-top,
     &-bottom{
       display: flex;
       flex-direction: column;
@@ -40,10 +40,10 @@
     &-contact{
       @include footer-top-items;
       background-image: url(../../assets/images/contact-card.png);
-     &__link{
-       text-decoration: none;
-       color: $color-title2;
-     }
+      &__link{
+        text-decoration: none;
+        color: $color-title2;
+      }
     }
     &-media{
       @include footer-top-items;
@@ -54,40 +54,41 @@
         justify-content: center;
         align-items: center;
         height: 75px;
+        gap: 10px;
       }
       &__linkedin{
         background-image: url(../../assets/images/icons8-linkedin-circundado.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
       &__github {
         background-image: url(../../assets/images/icons8-github.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
       &__facebook {
         background-image: url(../../assets/images/icons8-facebook.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
       &__whatsapp {
         background-image: url(../../assets/images/icons8-whatsapp.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
-    } 
+    }
 }
 
 @media screen and (min-width: 768px){

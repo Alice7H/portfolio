@@ -19,8 +19,8 @@ a{
   }
 }
 
-.dark-theme{ 
-  background-color: $dark-theme; 
+.dark-theme{
+  background-color: $dark-theme;
   a,p,li,h1,h2,h3,h4 {color: $color-title; }
   .card{
     background-color: $color-1;
@@ -30,10 +30,17 @@ a{
     }
   }
   .banner{background-color: $color-5;}
+  .skills-item{background-color: $color-5;}
+  .qualifications{
+    h3,p{
+      background-color: $color-5;
+      color: $color-2;
+    }
+  }
 }
 
-.light-theme{ 
-  background-color: $light-theme; 
+.light-theme{
+  background-color: $light-theme;
   a,p,li,h1,h2,h3,h4 {color: $color-title2; }
   .card{
     background-color: $color-1;
@@ -43,4 +50,11 @@ a{
     }
   }
   .banner{background-color: $color-3;}
+  .skills-item {background-color: $color-1;}
+  .qualifications{
+    li > h3,p{
+      color: $color-5;
+      background-color: $color-2;
+    }
+  }
 }
